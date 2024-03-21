@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Management Dashboard</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .high {
+    color: white;
+    background-color: #ff6666; /* Red for high priority */
+  }
+  .medium {
+    color: black;
+    background-color: #ffcc66; /* Yellow for medium priority */
+  }
+  .low {
+    color: black;
+    background-color: #99ff99; /* Green for low priority */
+  }
+  .finished {
+    background-color: #d9ead3; /* Light green for finished tasks */
+  }
+  .in-progress {
+    background-color: #cfe2f3; /* Light blue for tasks in progress */
+  }
+  .to-do {
+    background-color: #fff2cc; /* Light yellow for tasks to do */
+  }
+</style>
+</head>
+<body>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Owner</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Deadline</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Organize conference agenda</td>
+        <td>Eric Wallace</td>
+        <td class="high">High</td>
+        <td class="finished">Finished</td>
+        <td>2024-09-15</td>
+      </tr>
+      <!-- Repeat the row below for each task with appropriate class names for priority and status -->
+      <tr>
+        <td>Prepare conference content</td>
+        <td>Lucas FADEL</td>
+        <td class="medium">Medium</td>
+        <td class="finished">Finished</td>
+        <td>2024-09-10</td>
+      </tr>
+      <!-- Add more rows here -->
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
